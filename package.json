@@ -1,0 +1,11 @@
+{
+  "name": "com.juahn.v2.sim",
+  "displayName": "Sim",
+  "author": "armadimon",
+  "version": "0.1.0",
+  "unity": "6000.0",
+  "license": "MIT",
+  "type": "library",
+  "description": "Pure C# deterministic tick simulation core (command bus, tick systems, sim/domain events, decoupled SimClock). No UnityEngine dependency.",
+  "dependencies": {}
+}

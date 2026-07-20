@@ -1,0 +1,14 @@
+{
+    "name": "juahn.v2.Sim",
+    "rootNamespace": "Juahn.V2.Sim",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}
