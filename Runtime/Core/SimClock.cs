@@ -109,13 +109,15 @@ namespace Juahn.V2.Sim
 
             // 정확한 정수 tick 수 산출(누산기에서 정확히 tick 배수만 소비).
             var seconds = SecondsPerTick;
-            long ticks = (long)(_accumulatorSeconds / seconds);
+            // 1/60·1/120 누적으로 경계가 수 ulp 아래에 남아 한 틱 늦어지는 것을 보정한다.
+            // 허용 오차는 1틱의 10억분의 1로, 실제 프레임 시간을 앞당기지 않는다.
+            long ticks = (long)((_accumulatorSeconds + seconds * 1e-9) / seconds);
             if (ticks <= 0)
             {
                 return 0;
             }
 
-            _accumulatorSeconds -= ticks * seconds;
+            _accumulatorSeconds = Math.Max(0.0, _accumulatorSeconds - ticks * seconds);
 
             if (ticks > _maxTicksPerAdvance)
             {

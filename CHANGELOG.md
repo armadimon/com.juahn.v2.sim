@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased] — IdleMine integration
+
+- Correct floating point tick boundaries in SimClock so 30/60/120 fps accumulation reaches the same fixed tick.
+
 All notable changes to this package are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
