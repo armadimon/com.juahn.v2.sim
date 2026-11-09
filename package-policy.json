@@ -1,0 +1,10 @@
+{
+  "assemblies": {
+    "juahn.v2.Sim": {
+      "references": [],
+      "noEngineReferences": true
+    }
+  },
+  "assemblyOwners": {},
+  "consumerDependencies": []
+}

@@ -101,3 +101,7 @@ For long background returns, do **not** funnel the elapsed time through `SimCloc
 ## License
 
 MIT — see [LICENSE.md](LICENSE.md).
+
+## Package boundary validation
+
+Run `python3 Tools~/validate_package.py`. `package-policy.json` records allowed runtime assemblies, pure-core boundaries, declared dependencies and consumer-installed SDK dependencies. CI rejects unexpected references or missing Unity metadata. The existing runtime API is unchanged.
