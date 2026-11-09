@@ -25,3 +25,5 @@ node_modules/
 *.tmp
 
 !Tools~/compile-check/Runtime.csproj
+
+[Bb]in/
